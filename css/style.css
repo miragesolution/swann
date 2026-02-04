@@ -36,6 +36,17 @@ h6 {
    color: #788312;
 }
 
+.notification {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   color: #fff;
+   background-color: #788312;
+   font-size: 0.7rem;
+   position: absolute;
+   right: -12px;
+}
+
 .product-card {
    width: 100%;
    background: #fff;
