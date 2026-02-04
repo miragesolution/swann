@@ -1,6 +1,7 @@
 body {
    font-family: 'Inter', sans-serif;
    color: #2c2c2c;
+   padding-top: 120px;
 }
 
 h1,
@@ -165,6 +166,14 @@ h6 {
 .new-price {
    font-size: 1.2rem;
    font-weight: bold;
+}
+
+.navbar-light .navbar-toggler-icon {
+   background-image: none;
+}
+
+.navbar-light .navbar-toggler {
+   border-color: transparent;
 }
 
 .footer {
