@@ -65,12 +65,22 @@ h6 {
 
 .category-menu {
    background: #f5f5f5;
+   border-bottom: 1px solid #e7e7e7;
 }
 
 .category-menu li {
    font-weight: 500;
-   padding: 0 0.6rem;
    font-size: 0.9rem;
+}
+
+.category-menu li a {
+   text-decoration: none;
+   color: inherit;
+   transition: all 0.3s ease-in-out;
+}
+
+.category-menu li a:hover {
+   color: #788312;
 }
 
 .product-card {
@@ -177,12 +187,52 @@ h6 {
    right: 0;
    bottom: 0; */
    font-size: 0.8rem;
+   opacity: 0;
+}
+
+.tag-card {
+   border-radius: 10px;
+   padding: 0.2rem 0.8rem;
+   background-color: #fff;
+   position: absolute;
+   top: 6%;
+   z-index: 50;
+   left: 6%;
+   font-size: 0.8rem;
+   font-weight: 600;
+}
+
+.tag-card.new {
+   color: #fff;
+   background-color: #99bbad;
+}
+
+.popular-tag {
+   display: inline-block;
+   padding: 0.5rem;
+   background-color: #f5f5f5;
+   border-radius: 10px;
+   font-size: 0.8rem;
+   font-weight: 500;
+}
+
+.popular-tag.instagram {
+   color: #ff08d7;
+}
+
+.popular-tag.swann {
+   color: #788312;
+}
+
+.tag-card.trending {
+   color: #fff;
+   background-color: #088178;
 }
 
 .product-card:hover .cart-btn {
    background: #788312;
    color: #fff;
-   /* opacity: 1; */
+   opacity: 1;
    transition: 0.5s ease;
 }
 
@@ -231,6 +281,15 @@ h6 {
 .footer-menu li a {
    text-decoration: none;
    font-size: 0.8rem;
+   transition: all 0.3s ease;
+}
+
+.footer-menu li a:hover {
+   color: #788312;
+}
+
+.footer-menu h5 {
+   font-size: 1rem;
 }
 
 .footer-about p {
@@ -244,12 +303,22 @@ h6 {
 
 .social-list i {
    color: #fff;
+   transition: all 0.3s ease;
 }
 
 .navbar-toggler:focus {
    outline: none;
    box-shadow: none;
    outline: none;
+}
+
+.footer .social-list span {
+   margin-right: 0.8rem;
+   transition: all 0.3s ease;
+}
+
+.footer .social-list span:hover i {
+   color: #788312;
 }
 
 @media (min-width: 992px) {
@@ -259,10 +328,19 @@ h6 {
    .navbar-expand-lg .navbar-nav {
       gap: 1.8rem;
    }
+   .category-menu li {
+      padding: 0 0.6rem;
+   }
 }
 
 @media (max-width: 576px) {
+   body {
+      padding-top: 86px;
+   }
    .navbar-brand {
       width: 25%;
+   }
+   .product-card {
+      margin-bottom: 30px;
    }
 }
