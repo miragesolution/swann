@@ -52,6 +52,9 @@ h6 {
    color: #788312;
 }
 
+.nav-right a {
+   color: inherit;
+}
 .notification {
    width: 20px;
    height: 20px;
@@ -98,7 +101,7 @@ h6 {
 .image-wrapper {
    position: relative;
    overflow: hidden;
-   height: 50vh;
+   height: 45vh;
 }
 
 .product-img {
@@ -242,10 +245,10 @@ h6 {
 }
 
 .text-ellipsis {
-   width: 250px;
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
+   /* width: 250px; */
+   /* white-space: nowrap;
+   overflow: hidden; */
+   /* text-overflow: ellipsis; */
    margin-bottom: 0.5rem;
    font-size: 0.8rem;
 }
@@ -342,5 +345,14 @@ h6 {
    }
    .product-card {
       margin-bottom: 30px;
+   }
+   .popular-tag {
+      font-size: 0.7rem;
+   }
+   .new-price {
+      font-size: 1rem;
+   }
+   .pricing {
+      flex-direction: column;
    }
 }
