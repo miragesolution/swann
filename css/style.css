@@ -15,8 +15,9 @@ h6 {
    font-family: 'Inter', sans-serif;
 }
 
-.navbar {
-   background-color: #e5d2d8;
+.btn:focus {
+   outline: none;
+   box-shadow: none;
 }
 
 .carousel-inner {
@@ -34,6 +35,11 @@ h6 {
 
 .cart {
    font-size: 1.5rem;
+}
+
+.navbar {
+   background-color: white;
+   border-bottom: 2px solid #dbe1dd;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -67,23 +73,41 @@ h6 {
 }
 
 .category-menu {
-   background: #f5f5f5;
+   background: #fff;
    border-bottom: 1px solid #e7e7e7;
 }
 
 .category-menu li {
    font-weight: 500;
    font-size: 0.9rem;
+   margin: 0 15px;
 }
 
 .category-menu li a {
    text-decoration: none;
    color: inherit;
    transition: all 0.3s ease-in-out;
+   display: inline-block;
+   padding: 15px 10px;
+   font-weight: 600;
+   font-size: 0.85rem;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
 }
 
-.category-menu li a:hover {
+.category-menu li a:hover,
+.category-menu li.active a {
    color: #788312;
+   border-bottom: 3px solid #788312;
+}
+
+.filter-menu .form-select {
+   font-size: 0.85rem;
+   font-weight: 500;
+   color: #555;
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
 }
 
 .product-card {
@@ -92,6 +116,9 @@ h6 {
    text-align: center;
    position: relative;
    transition: all 0.3s ease-in-out;
+   border-radius: 0.75rem;
+   overflow: hidden;
+   border: 1px solid #e2e8f0;
 }
 
 .product-card:hover {
@@ -119,6 +146,13 @@ h6 {
 
 .product-card .product-info {
    text-align: start;
+}
+
+.tag-bottom {
+   position: absolute;
+   z-index: 500;
+   bottom: 0;
+   right: 0;
 }
 /* .hover-img {
    position: absolute;
@@ -194,33 +228,35 @@ h6 {
 }
 
 .tag-card {
-   border-radius: 10px;
+   border-radius: 5px;
    padding: 0.2rem 0.8rem;
    background-color: #fff;
    position: absolute;
-   top: 6%;
+   top: 3%;
    z-index: 50;
-   left: 6%;
+   left: 3%;
    font-size: 0.8rem;
    font-weight: 600;
 }
 
 .tag-card.new {
    color: #fff;
-   background-color: #99bbad;
+   background-color: #ff7451;
 }
 
 .popular-tag {
    display: inline-block;
    padding: 0.5rem;
-   background-color: #f5f5f5;
-   border-radius: 10px;
-   font-size: 0.8rem;
-   font-weight: 500;
+   background: #fff0f5;
+   border-radius: 12px;
+   font-size: 0.7rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 2px 12px;
 }
 
 .popular-tag.instagram {
-   color: #ff08d7;
+   color: #e1306c;
 }
 
 .popular-tag.swann {
@@ -229,7 +265,7 @@ h6 {
 
 .tag-card.trending {
    color: #fff;
-   background-color: #088178;
+   background-color: #48cab2;
 }
 
 .product-card:hover .cart-btn {
@@ -250,7 +286,10 @@ h6 {
    overflow: hidden; */
    /* text-overflow: ellipsis; */
    margin-bottom: 0.5rem;
-   font-size: 0.8rem;
+   font-size: 1.125rem;
+   line-height: 1.75rem;
+   font-weight: 600;
+   text-transform: uppercase;
 }
 
 .old-price {
@@ -262,6 +301,29 @@ h6 {
 .new-price {
    font-size: 1.2rem;
    font-weight: bold;
+   color: #788312;
+}
+
+.add-to-cart-btn {
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   background: #788312;
+   color: white;
+   font-weight: 500;
+   letter-spacing: 1px;
+   width: 100%;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   border-top-right-radius: 0.5rem;
+   border-top-left-radius: 0.5rem;
+   border-bottom: 4px solid #d7d7d7;
+   transition: all 0.3s ease-in;
+}
+
+.add-to-cart-btn:hover {
+   transform: translateY(2px);
+   border-bottom: transparent;
+   color: #fff;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -270,6 +332,28 @@ h6 {
 
 .navbar-light .navbar-toggler {
    border-color: transparent;
+}
+
+.head-section {
+   padding: 60px 0 40px;
+   text-align: center;
+}
+
+.head-section .lead {
+   font-size: 1rem;
+   color: #666;
+   line-height: 1.8;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.head-section h1 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: #111;
+   margin-bottom: 20px;
 }
 
 .footer {

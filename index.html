@@ -46,7 +46,7 @@
                ></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                      <a class="nav-link active" aria-current="page" href="#"
                         >Home</a
@@ -164,7 +164,7 @@
          </button>
       </div> -->
       <main>
-         <section class="category-menu p-2 shadow-sm">
+         <!-- <section class="category-menu p-2 shadow-sm">
             <div class="container">
                <ul class="list-inline mb-0">
                   <li class="list-inline-item active"><a href="#">All</a></li>
@@ -174,22 +174,70 @@
                   <li class="list-inline-item"><a href="#">Accessories</a></li>
                </ul>
             </div>
-         </section>
+         </section> -->
          <div class="container py-5 featured-products">
             <div class="row">
                <div class="col-12">
                   <div class="head-section">
-                     <div class="col-6 title-top">
-                        <h1>All Products</h1>
+                     <div class="text-center title-top">
+                        <h1 class="text-uppercase">All Products</h1>
+                        <p class="lead">
+                           <b>Shop &gt; All Products</b>
+                        </p>
                      </div>
-                     <div class="title-top">
+                     <!-- <div class="title-top">
                         <p class="lead">
                            Curated styles designed for everyday elegance
                         </p>
-                     </div>
+                     </div> -->
                   </div>
+                  <section class="category-menu shadow-sm">
+                     <div
+                        class="d-flex align-items-center justify-content-between"
+                     >
+                        <ul class="list-inline mb-0 d-flex">
+                           <li class="list-inline-item active">
+                              <a href="#">OFFER</a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a href="#">Sarees</a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a href="#">Silk</a>
+                           </li>
 
-                  <div class="col-lg-2 ms-auto mt-5">
+                           <li class="list-inline-item">
+                              <a href="#">Eid</a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a href="#">Kanchi Cotton</a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a href="#">Sarees</a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a href="#">Silk</a>
+                           </li>
+                           <li class="list-inline-item"><a href="#">Eid</a></li>
+                           <li class="list-inline-item">
+                              <a href="#">Silk</a>
+                           </li>
+                           <li class="list-inline-item"><a href="#">Eid</a></li>
+                        </ul>
+                        <div class="filter-menu">
+                           <select
+                              class="form-select border-0 shadow-none"
+                              aria-label="Default select example"
+                           >
+                              <option selected="">Sort by Latest</option>
+                              <option value="1">Sort by Popularity</option>
+                              <option value="2">Sort by rating</option>
+                              <option value="3">Sort by Price</option>
+                           </select>
+                        </div>
+                     </div>
+                  </section>
+                  <!-- <div class="col-lg-2 ms-auto mt-5">
                      <div class="filter-menu">
                         <select
                            class="form-select"
@@ -201,7 +249,7 @@
                            <option value="3">Sort by Price</option>
                         </select>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
             <!-- ---------product image change row------------- -->
@@ -374,7 +422,7 @@
             </div> -->
             <div class="row mt-5">
                <div class="col-lg-3 col-6">
-                  <div class="product-card">
+                  <div class="product-card shadow-sm">
                      <a href="#">
                         <div class="tag-card new shadow-sm">New</div>
                         <div class="image-wrapper">
@@ -383,44 +431,47 @@
                               class="product-img default-img img-fluid"
                            />
 
-                           <div class="icon-group">
+                           <!-- <div class="icon-group">
                               <button>
                                  <i class="bi bi-eye"></i>
                               </button>
                               <button><i class="bi bi-heart"></i></button>
                               <button><i class="bi bi-bag"></i></button>
+                           </div> -->
+                           <div class="tag-bottom p-3 pt-0 text-start">
+                              <span class="popular-tag instagram">
+                                 <i class="bi bi-instagram"></i>
+                                 Popular on Instagram
+                              </span>
                            </div>
                         </div>
                         <div class="product-info p-3">
                            <!-- <span class="text-uppercase fw-bold category"
                               >cotton dressing</span
                            > -->
-                           <p class="text-ellipsis text-center">
-                              comfortable dressing
-                           </p>
-                           <div class="pricing d-flex align-items-center">
-                              <span class="old-price"
-                                 ><i class="bi bi-currency-rupee"></i
-                                 >999.00</span
-                              >
+                           <p class="text-ellipsis">comfortable dressing</p>
+                           <div class="pricing d-flex flex-column">
                               <span class="new-price"
                                  ><i class="bi bi-currency-rupee"></i
                                  >799.00</span
                               >
+                              <span class="old-price"
+                                 ><i class="bi bi-currency-rupee"></i
+                                 >999.00</span
+                              >
                            </div>
+                           <button class="btn add-to-cart-btn mt-3">
+                              Add to Cart
+                           </button>
                         </div>
-                        <div class="tag-bottom p-3 pt-0 text-start">
-                           <span class="popular-tag instagram"
-                              >Popular on Instagram</span
-                           >
-                        </div>
+
                         <!-- <button class="cart-btn text-uppercase">view</button> -->
                      </a>
                   </div>
                </div>
 
                <div class="col-lg-3 col-6">
-                  <div class="product-card">
+                  <div class="product-card shadow-sm">
                      <a href="#">
                         <div class="tag-card trending shadow-sm">Trending</div>
                         <div class="image-wrapper">
@@ -429,42 +480,47 @@
                               class="product-img default-img img-fluid"
                            />
 
-                           <div class="icon-group">
+                           <!-- <div class="icon-group">
                               <button>
                                  <i class="bi bi-eye"></i>
                               </button>
                               <button><i class="bi bi-heart"></i></button>
                               <button><i class="bi bi-bag"></i></button>
+                           </div> -->
+                           <div class="tag-bottom p-3 pt-0 text-start">
+                              <span class="popular-tag swann">
+                                 <i class="bi bi-heart-fill"></i> Loved on
+                                 swann</span
+                              >
                            </div>
                         </div>
                         <div class="product-info p-3">
                            <!-- <span class="text-uppercase fw-bold category"
                               >cotton dressing</span
                            > -->
-                           <p class="text-ellipsis text-center">
-                              stylish dressing
-                           </p>
-                           <div class="pricing d-flex align-items-center">
-                              <span class="old-price"
-                                 ><i class="bi bi-currency-rupee"></i
-                                 >999.00</span
-                              >
+                           <p class="text-ellipsis">stylish dressing</p>
+                           <div class="pricing d-flex flex-column">
                               <span class="new-price"
                                  ><i class="bi bi-currency-rupee"></i
                                  >799.00</span
                               >
+                              <span class="old-price"
+                                 ><i class="bi bi-currency-rupee"></i
+                                 >999.00</span
+                              >
                            </div>
+                           <button class="btn add-to-cart-btn mt-3">
+                              Add to Cart
+                           </button>
                         </div>
-                        <div class="tag-bottom p-3 pt-0 text-start">
-                           <span class="popular-tag swann">Loved on swann</span>
-                        </div>
+
                         <!-- <button class="cart-btn text-uppercase">view</button> -->
                      </a>
                   </div>
                </div>
 
                <div class="col-lg-3 col-6">
-                  <div class="product-card">
+                  <div class="product-card shadow-sm">
                      <a href="#">
                         <div class="image-wrapper">
                            <img
@@ -472,38 +528,39 @@
                               class="product-img default-img img-fluid"
                            />
 
-                           <div class="icon-group">
+                           <!-- <div class="icon-group">
                               <button>
                                  <i class="bi bi-eye"></i>
                               </button>
                               <button><i class="bi bi-heart"></i></button>
                               <button><i class="bi bi-bag"></i></button>
-                           </div>
+                           </div> -->
                         </div>
                         <div class="product-info p-3">
                            <!-- <span class="text-uppercase fw-bold category"
                               >cotton dressing</span
                            > -->
-                           <p class="text-ellipsis text-center">
-                              stylish and comfortable
-                           </p>
-                           <div class="pricing d-flex align-items-center">
-                              <span class="old-price"
-                                 ><i class="bi bi-currency-rupee"></i
-                                 >999.00</span
-                              >
+                           <p class="text-ellipsis">stylish and comfortable</p>
+                           <div class="pricing d-flex flex-column">
                               <span class="new-price"
                                  ><i class="bi bi-currency-rupee"></i
                                  >799.00</span
                               >
+                              <span class="old-price"
+                                 ><i class="bi bi-currency-rupee"></i
+                                 >999.00</span
+                              >
                            </div>
+                           <button class="btn add-to-cart-btn mt-3">
+                              Add to Cart
+                           </button>
                         </div>
                         <!-- <button class="cart-btn text-uppercase">view</button> -->
                      </a>
                   </div>
                </div>
                <div class="col-lg-3 col-6">
-                  <div class="product-card">
+                  <div class="product-card shadow-sm">
                      <a href="#">
                         <div class="image-wrapper">
                            <img
@@ -511,22 +568,20 @@
                               class="product-img default-img img-fluid"
                            />
 
-                           <div class="icon-group">
+                           <!-- <div class="icon-group">
                               <button>
                                  <i class="bi bi-eye"></i>
                               </button>
                               <button><i class="bi bi-heart"></i></button>
                               <button><i class="bi bi-bag"></i></button>
-                           </div>
+                           </div> -->
                         </div>
                         <div class="product-info p-3">
                            <!-- <span class="text-uppercase fw-bold category"
                               >cotton dressing</span
                            > -->
-                           <p class="text-ellipsis text-center">
-                              Stay stylish and comfortable dressing
-                           </p>
-                           <div class="pricing d-flex align-items-center">
+                           <p class="text-ellipsis">stylish and comfortable</p>
+                           <div class="pricing d-flex flex-column">
                               <span class="old-price"
                                  ><i class="bi bi-currency-rupee"></i
                                  >999.00</span
@@ -536,6 +591,9 @@
                                  >799.00</span
                               >
                            </div>
+                           <button class="btn add-to-cart-btn mt-3">
+                              Add to Cart
+                           </button>
                         </div>
                         <!-- <button class="cart-btn text-uppercase">view</button> -->
                      </a>
