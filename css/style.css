@@ -80,7 +80,9 @@ h6 {
 .category-menu li {
    font-weight: 500;
    font-size: 0.9rem;
-   margin: 0 15px;
+   /* margin: 0 15px; */
+   display: flex;
+   align-items: center;
 }
 
 .category-menu li a {
@@ -280,6 +282,22 @@ h6 {
    color: #7e7e7e;
 }
 
+.category-menu .icon-holder {
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+   border-radius: 50%;
+   background-color: #f5f5f5;
+   margin-right: 10px;
+   padding: 5px;
+   position: relative;
+   overflow: hidden;
+}
+
+.category-menu .icon-holder img {
+   border-radius: 50%;
+}
+
 .text-ellipsis {
    /* width: 250px; */
    /* white-space: nowrap;
@@ -415,9 +433,9 @@ h6 {
    .navbar-expand-lg .navbar-nav {
       gap: 1.8rem;
    }
-   .category-menu li {
+   /* .category-menu li {
       padding: 0 0.6rem;
-   }
+   } */
 }
 
 @media (max-width: 576px) {
