@@ -37,6 +37,19 @@ h6 {
    font-size: 1.5rem;
 }
 
+.theme-bg {
+   background-color: #788312;
+}
+
+.theme-btn {
+   color: #fff;
+}
+
+.btn-whatsapp {
+   background-color: #16a349;
+   color: #fff;
+}
+
 .navbar {
    background-color: white;
    border-bottom: 2px solid #dbe1dd;
@@ -61,6 +74,7 @@ h6 {
 .nav-right a {
    color: inherit;
 }
+
 .notification {
    width: 20px;
    height: 20px;
@@ -72,9 +86,48 @@ h6 {
    right: -12px;
 }
 
+.category-wrapper {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.category-scroll {
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   white-space: nowrap;
+   width: 100%;
+}
+
+.category-scroll::-webkit-scrollbar {
+   display: none;
+}
+
 .category-menu {
    background: #fff;
    border-bottom: 1px solid #e7e7e7;
+}
+
+/* .category-scroll .list-inline {
+   gap: 24px;
+} */
+
+.nav-arrow {
+   background: #fff;
+   border: none;
+   font-size: 20px;
+   cursor: pointer;
+   padding: 8px 6px;
+   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); */
+   z-index: 2;
+}
+
+.nav-arrow.left {
+   margin-right: 10px;
+}
+
+.nav-arrow.right {
+   margin-left: 10px;
 }
 
 .category-menu li {
@@ -299,10 +352,6 @@ h6 {
 }
 
 .text-ellipsis {
-   /* width: 250px; */
-   /* white-space: nowrap;
-   overflow: hidden; */
-   /* text-overflow: ellipsis; */
    margin-bottom: 0.5rem;
    font-size: 1.125rem;
    line-height: 1.75rem;
@@ -332,8 +381,7 @@ h6 {
    width: 100%;
    padding-top: 0.5rem;
    padding-bottom: 0.5rem;
-   border-top-right-radius: 0.5rem;
-   border-top-left-radius: 0.5rem;
+   border-radius: 0.5rem;
    border-bottom: 4px solid #d7d7d7;
    transition: all 0.3s ease-in;
 }
@@ -341,6 +389,7 @@ h6 {
 .add-to-cart-btn:hover {
    transform: translateY(2px);
    border-bottom: transparent;
+   border-top: 4px solid #d7d7d7;
    color: #fff;
 }
 
@@ -350,11 +399,6 @@ h6 {
 
 .navbar-light .navbar-toggler {
    border-color: transparent;
-}
-
-.head-section {
-   padding: 60px 0 40px;
-   text-align: center;
 }
 
 .head-section .lead {
@@ -375,12 +419,13 @@ h6 {
 }
 
 .footer {
-   background-color: #0d0e00;
+   background-color: #fff;
 }
 
 .footer-menu li a,
 .footer-menu h5 {
-   color: #fff;
+   color: #0c0e02;
+   text-transform: uppercase;
 }
 
 .footer-menu li a {
@@ -402,12 +447,12 @@ h6 {
 }
 
 .footer-menu li i {
-   color: #fff;
+   color: #0c0e02;
    padding-right: 0.5rem;
 }
 
 .social-list i {
-   color: #fff;
+   color: #0c0e02;
    transition: all 0.3s ease;
 }
 
@@ -426,6 +471,36 @@ h6 {
    color: #788312;
 }
 
+.footer-about p {
+   color: #0c0e02;
+}
+
+.footerlogo {
+   width: 30%;
+}
+
+.footer-bottom-line {
+   border-bottom: 1px solid #b1b1b1;
+}
+
+.main-head {
+   font-size: 2.25rem;
+   line-height: 2.5rem;
+   letter-spacing: 0.025em;
+   font-weight: 400;
+}
+
+.pro-desc-tab .nav-link {
+   color: #555;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 0.9rem;
+}
+
+.pro-desc-tab .nav-link.active {
+   color: #111;
+}
+
 @media (min-width: 992px) {
    .navbar-brand {
       width: 10%;
@@ -433,9 +508,10 @@ h6 {
    .navbar-expand-lg .navbar-nav {
       gap: 1.8rem;
    }
-   /* .category-menu li {
-      padding: 0 0.6rem;
-   } */
+   .head-section {
+      padding: 60px 0 40px;
+      text-align: center;
+   }
 }
 
 @media (max-width: 576px) {
