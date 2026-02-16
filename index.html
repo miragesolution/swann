@@ -89,12 +89,20 @@
                   <a href="#" class="search d-inline-flex me-4"
                      ><i class="bi bi-search"></i
                   ></a>
-                  <div class="d-inline-flex position-relative">
+                  <a href="#" class="search d-inline-flex me-4">
+                     <i class="bi bi-instagram"></i>
+                  </a>
+                  <div class="d-inline-flex position-relative me-4">
                      <a href="#" class="cart"><i class="bi bi-bag"></i></a>
                      <span
                         class="d-flex align-items-center justify-content-center notification"
                         >0</span
                      >
+                  </div>
+                  <div class="d-inline-flex position-relative">
+                     <a href="#" class="search d-inline-flex me-4">
+                        <i class="bi bi-person"></i>
+                     </a>
                   </div>
                </div>
             </div>
@@ -339,23 +347,25 @@
                               <a href="#">Eid</a>
                            </li>
                         </ul>
-
-                        <!-- <div class="filter-menu">
-                           <select
-                              class="form-select border-0 shadow-none"
-                              aria-label="Default select example"
-                           >
-                              <option selected="">Sort by Latest</option>
-                              <option value="1">Sort by Popularity</option>
-                              <option value="2">Sort by rating</option>
-                              <option value="3">Sort by Price</option>
-                           </select>
-                        </div> -->
                      </div>
                      <button class="nav-arrow right" id="nextBtn">
                         <i class="bi bi-chevron-right"></i>
                      </button>
                   </section>
+                  <div class="filetr-selection d-flex justify-content-end mt-4">
+                     <div class="col-lg-3 filter-menu">
+                        <select
+                           class="form-select shadow-none"
+                           aria-label="Default select example"
+                        >
+                           <option selected="">Sort by Latest</option>
+                           <option value="1">Sort by Popularity</option>
+                           <option value="2">Sort by rating</option>
+                           <option value="3">Sort by Price</option>
+                        </select>
+                     </div>
+                  </div>
+
                   <!-- <div class="col-lg-2 ms-auto mt-5">
                      <div class="filter-menu">
                         <select
@@ -723,7 +733,7 @@
       </main>
       <footer class="footer pt-lg-5">
          <div class="container footer-bottom-line">
-            <div class="row footer-inner pb-4">
+            <div class="row footer-inner">
                <div class="col-lg-4 pe-lg-5">
                   <div class="footer-about pt-lg-5 text-center">
                      <div class="footer-logo">
@@ -826,6 +836,53 @@
                   </div>
                </div>
             </div>
+            <div class="container py-5">
+               <div class="row">
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-truck"></i>
+                           </div>
+                           <h5>Fast Delivery</h5>
+                           <p class="text-muted mb-0">
+                              Deliver Products On Time
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-headset"></i>
+                           </div>
+                           <h5>24/7 Support</h5>
+                           <p class="text-muted mb-0">Get help anytime</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="footer-box">
+                        <div class="d-flex flex-column align-items-center">
+                           <div
+                              class="icon-box mb-3 d-flex justify-content-center align-items-center"
+                           >
+                              <i class="bi bi-patch-check-fill"></i>
+                           </div>
+                           <h5>100% Authentic</h5>
+                           <p class="text-muted mb-0">
+                              Guaranteed genuine products
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
          <div class="container">
             <div class="col-12">
@@ -833,6 +890,13 @@
                   <small>© Copyrights reserved, 2024</small>
                </div>
             </div>
+         </div>
+         <div class="whatsapp">
+            <img
+               src="images/icons/whatsapp.svg"
+               alt="whatsapp"
+               class="img-fluid"
+            />
          </div>
       </footer>
       <script
