@@ -1,58 +1,48 @@
-// productslider
-const mainBox = document.getElementById('mainImageBox');
 const mainImage = document.getElementById('mainImage');
-const zoomBox = document.getElementById('zoomBox');
-
+const zoomResult = document.getElementById('zoomResult');
 const thumbs = document.querySelectorAll('.thumb');
-const thumbContainer = document.getElementById('thumbContainer');
-const nextBtn = document.getElementById('thumbNext');
-const prevBtn = document.getElementById('thumbPrev');
 
-const SCROLL_AMOUNT = 80;
+const zoomLevel = 2.5;
 
-/* -----------------------------
-     THUMBNAIL CLICK
-  ------------------------------*/
+/* Thumbnail click */
 thumbs.forEach((thumb) => {
    thumb.addEventListener('click', () => {
-      // active class
-      thumbs.forEach((t) => t.classList.remove('active'));
+      document.querySelector('.thumb.active').classList.remove('active');
       thumb.classList.add('active');
-
-      // change main image
       mainImage.src = thumb.src;
-
-      // update zoom background
-      zoomBox.style.backgroundImage = `url(${thumb.src})`;
    });
 });
 
-/* -----------------------------
-     THUMBNAIL SCROLL
-  ------------------------------*/
-nextBtn.addEventListener('click', () => {
-   thumbContainer.scrollLeft += SCROLL_AMOUNT;
+/* Hover zoom */
+mainImage.addEventListener('mouseenter', () => {
+   zoomResult.style.display = 'block';
+   zoomResult.style.backgroundImage = `url('${mainImage.src}')`;
+   zoomResult.style.backgroundSize =
+      mainImage.width * zoomLevel + 'px ' + mainImage.height * zoomLevel + 'px';
 });
+
+mainImage.addEventListener('mousemove', (e) => {
+   const rect = mainImage.getBoundingClientRect();
+   const x = e.clientX - rect.left;
+   const y = e.clientY - rect.top;
+
+   zoomResult.style.backgroundPosition = `${(x / mainImage.width) * 100}% ${(y / mainImage.height) * 100}%`;
+});
+
+mainImage.addEventListener('mouseleave', () => {
+   zoomResult.style.display = 'none';
+});
+
+const thumbList = document.getElementById('thumbList');
+const prevBtn = document.getElementById('thumbPrev');
+const nextBtn = document.getElementById('thumbNext');
+
+const scrollAmount = 150; // px per click
 
 prevBtn.addEventListener('click', () => {
-   thumbContainer.scrollLeft -= SCROLL_AMOUNT;
+   thumbList.scrollLeft -= scrollAmount;
 });
 
-/* -----------------------------
-     HOVER ZOOM
-  ------------------------------*/
-mainBox.addEventListener('mousemove', (e) => {
-   zoomBox.style.display = 'block';
-   zoomBox.style.backgroundImage = `url(${mainImage.src})`;
-
-   const rect = mainBox.getBoundingClientRect();
-
-   const x = ((e.clientX - rect.left) / rect.width) * 100;
-   const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-   zoomBox.style.backgroundPosition = `${x}% ${y}%`;
-});
-
-mainBox.addEventListener('mouseleave', () => {
-   zoomBox.style.display = 'none';
+nextBtn.addEventListener('click', () => {
+   thumbList.scrollLeft += scrollAmount;
 });
