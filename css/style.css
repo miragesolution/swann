@@ -843,13 +843,12 @@ h6 {
 
 .buy-btn {
    width: 100%;
-   background: #788312;
    color: #fff;
    border: none;
    padding: 14px;
    font-size: 16px;
    font-weight: 700;
-   border-radius: 999px;
+   border-radius: 0.5rem;
    cursor: pointer;
 }
 
@@ -924,5 +923,11 @@ h6 {
    }
    .nav-right i {
       font-size: 1.4rem;
+   }
+   .main-image {
+      height: 530px;
+   }
+   .main-image img {
+      object-fit: cover;
    }
 }
