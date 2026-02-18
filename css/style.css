@@ -519,7 +519,7 @@ h6 {
 }
 
 .main-head {
-   font-size: 2.25rem;
+   font-size: 2rem;
    line-height: 2.5rem;
    letter-spacing: 0.025em;
    font-weight: 400;
@@ -579,7 +579,7 @@ h6 {
 }
 
 .thumb.active {
-   border-color: #000;
+   border-color: #788312;
 }
 
 .thumb-nav {
