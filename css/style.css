@@ -168,6 +168,7 @@ h6 {
    cursor: pointer;
    background-color: transparent;
    height: 50px;
+   border: transparent;
 }
 
 .product-card {
@@ -863,6 +864,23 @@ h6 {
    color: #374151;
    text-decoration: none;
    font-weight: 500;
+}
+
+.delivery-features i {
+   font-size: 1.2rem;
+}
+
+.results-count p {
+   font-family: 'Jost', sans-serif;
+   font-size: 0.9rem;
+   color: #777;
+   border-left: 3px solid #788312;
+   padding-left: 10px;
+   margin-bottom: 0;
+}
+
+.page-link {
+   color: #374151;
 }
 
 @media (min-width: 992px) {
