@@ -692,6 +692,180 @@ h6 {
    object-position: top;
 }
 
+.item-cart-detail h2 {
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+
+.qty-wrapper {
+   display: inline-flex;
+   align-items: center;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 6px;
+   gap: 10px;
+   background: #fff;
+}
+
+.qty-btn {
+   width: 36px;
+   height: 30px;
+   border: none;
+   border-radius: 8px;
+   background: #f5f5f5;
+   font-size: 20px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.qty-btn:hover {
+   background: #eaeaea;
+}
+
+.qty-btn:disabled {
+   opacity: 0.5;
+   cursor: not-allowed;
+}
+
+.qty-value {
+   min-width: 24px;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.item-cart-price {
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: #2c2c2c;
+}
+
+.delete-btn {
+   color: #e3242b;
+   background-color: #f5f5f5;
+   border-radius: 0.5rem;
+   padding: 0.3rem 0.5rem;
+   width: 100px;
+   text-align: center;
+}
+
+.order-card {
+   border: 1px solid #e5e7eb;
+   border-radius: 14px;
+   padding: 20px;
+   background: #fff;
+}
+
+.card-title {
+   font-size: 22px;
+   font-weight: 700;
+   margin-bottom: 18px;
+}
+
+.row-line {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 12px;
+   font-size: 16px;
+   color: #374151;
+}
+
+.row-line.discount {
+   color: #16a34a;
+   font-weight: 600;
+}
+
+.cashback {
+   background: #4ade80;
+   color: #fff;
+   padding: 12px;
+   border-radius: 8px;
+   font-size: 14px;
+   margin: 14px 0;
+}
+
+.row-line.total {
+   font-size: 18px;
+   font-weight: 700;
+   margin-top: 10px;
+}
+
+.coupon-section {
+   margin-top: 20px;
+}
+
+.coupon-section label {
+   display: block;
+   font-weight: 600;
+   margin-bottom: 8px;
+}
+
+.coupon-box {
+   display: flex;
+   gap: 10px;
+}
+
+.coupon-box input {
+   flex: 1;
+   padding: 10px 12px;
+   border: 1px solid #d1d5db;
+   border-radius: 8px;
+   font-size: 14px;
+}
+
+.apply-btn {
+   background: #3b82f6;
+   color: #fff;
+   border: none;
+   padding: 10px 16px;
+   border-radius: 8px;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.coupon-empty {
+   margin-top: 8px;
+   padding: 10px;
+   background: #f3f4f6;
+   border-radius: 8px;
+   text-align: center;
+   color: #6b7280;
+   font-size: 14px;
+}
+
+.shipping-note {
+   color: #ef4444;
+   font-size: 14px;
+   margin: 14px 0;
+}
+
+.buy-btn {
+   width: 100%;
+   background: #788312;
+   color: #fff;
+   border: none;
+   padding: 14px;
+   font-size: 16px;
+   font-weight: 700;
+   border-radius: 999px;
+   cursor: pointer;
+}
+
+.terms {
+   font-size: 13px;
+   color: #6b7280;
+   margin-top: 12px;
+   text-align: center;
+}
+
+.terms a {
+   color: #374151;
+   text-decoration: none;
+   font-weight: 500;
+}
+
 @media (min-width: 992px) {
    .navbar-brand {
       width: 10%;
@@ -737,5 +911,18 @@ h6 {
    .delivery-features p {
       display: flex;
       flex-wrap: wrap;
+   }
+   .cart-price {
+      display: flex;
+      gap: 20px;
+   }
+   .cart-card .item-container {
+      height: 250px;
+   }
+   .nav-right {
+      font-size: 1rem;
+   }
+   .nav-right i {
+      font-size: 1.4rem;
    }
 }
