@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
       <link
          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
          rel="stylesheet"
@@ -159,28 +160,32 @@
                         <div class="mb-3 row">
                            <div class="col-lg-6">
                               <label class="form-label"
-                                 >First name<span class="ateric">*</span></label
+                                 >First name<span class="text-danger"
+                                    >*</span
+                                 ></label
                               >
                               <input type="text" class="form-control" />
                            </div>
                            <div class="col-lg-6">
                               <label class="form-label"
-                                 >Last name<span class="ateric">*</span></label
+                                 >Last name<span class="text-danger"
+                                    >*</span
+                                 ></label
                               >
                               <input type="text" class="form-control" />
                            </div>
                         </div>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                            <label class="form-label"
-                              >Company name (optional)<span class="ateric"
+                              >Company name (optional)<span class="text-danger"
                                  >*</span
                               ></label
                            >
                            <input type="text" class="form-control" />
-                        </div>
-                        <div class="mb-3">
+                        </div> -->
+                        <!-- <div class="mb-3">
                            <label class="form-label"
-                              >Country / Region<span class="ateric"
+                              >Country / Region<span class="text-danger"
                                  >*</span
                               ></label
                            >
@@ -193,32 +198,32 @@
                               <option value="2">SriLanka</option>
                               <option value="3">UK</option>
                            </select>
-                        </div>
-                        <div class="mb-3">
+                        </div> -->
+                        <!-- <div class="mb-3">
                            <label class="form-label"
                               >Street address
-                              <span class="ateric">*</span></label
+                              <span class="text-danger">*</span></label
                            >
                            <input
                               type="text"
                               class="form-control"
                               placeholder="House number and street name"
                            />
-                        </div>
-                        <div class="mb-3">
+                        </div> -->
+                        <!-- <div class="mb-3">
                            <label class="form-label"
-                              >Town / City <span class="ateric">*</span></label
+                              >Town / City <span class="text-danger">*</span></label
                            >
                            <input
                               type="text"
                               class="form-control"
                               placeholder="House number and street name"
                            />
-                        </div>
-                        <div class="mb-3">
+                        </div> -->
+                        <!-- <div class="mb-3">
                            <label class="form-label"
                               >State / Country
-                              <span class="ateric">*</span></label
+                              <span class="text-danger">*</span></label
                            >
                            <select
                               class="form-select"
@@ -229,21 +234,68 @@
                               <option value="2">SriLanka</option>
                               <option value="3">UK</option>
                            </select>
-                        </div>
-                        <div class="mb-3">
-                           <label class="form-label"
-                              >Phone <span class="ateric">*</span></label
-                           >
-                           <input type="text" class="form-control" />
-                        </div>
+                        </div> -->
                         <div class="mb-3">
                            <label class="form-label"
                               >Email address
-                              <span class="ateric">*</span></label
+                              <span class="text-danger">*</span></label
                            >
                            <input type="email" class="form-control" />
                         </div>
-                        <div class="mb-3 pt-3">
+                        <div class="mb-3">
+                           <label class="form-label"
+                              >Phone <span class="text-danger">*</span></label
+                           >
+                           <div class="row">
+                              <div class="col-lg-9 col-12 mb-3 mb-lg-0">
+                                 <!-- <input type="text" class="form-control" /> -->
+                                 <div class="input-group flex-nowrap">
+                                    <select
+                                       class="form-select"
+                                       style="max-width: 120px"
+                                    >
+                                       <option value="+91" selected>
+                                          +91 India
+                                       </option>
+                                       <option value="+1">+1 USA</option>
+                                       <option value="+44">+44 UK</option>
+                                       <option value="+61">
+                                          +61 Australia
+                                       </option>
+                                    </select>
+                                    <input
+                                       type="tel"
+                                       class="form-control"
+                                       inputmode="numeric"
+                                       pattern="[0-9]*"
+                                       id="phoneInput"
+                                    />
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-6">
+                                 <button
+                                    type="button"
+                                    class="btn btn-outline-danger w-100"
+                                    disabled
+                                    style="padding: 0.8rem 0.7rem"
+                                 >
+                                    OTP Verification
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="mb-3 d-none" id="otpSection">
+                           <label class="form-label">
+                              Enter OTP <span class="text-danger">*</span>
+                           </label>
+                           <input
+                              type="text"
+                              class="form-control w-50"
+                              placeholder="Enter OTP"
+                              maxlength="6"
+                           />
+                        </div>
+                        <!-- <div class="mb-3 pt-3">
                            <div class="form-check create-account-check mb-3">
                               <input
                                  class="form-check-input"
@@ -271,62 +323,79 @@
                                  />
                               </div>
                            </div>
-                        </div>
+                        </div> -->
                      </form>
                   </div>
                </div>
                <div class="col-lg-4">
                   <div class="order-card order-summary">
-                     <h3 class="card-title">Order Summary</h3>
-
-                     <div class="row-line">
-                        <span>Subtotal (1 item):</span>
-                        <strong>₹1800.00</strong>
-                     </div>
-
-                     <div class="row-line discount">
-                        <span>Product Discounts:</span>
-                        <strong>-₹801</strong>
-                     </div>
-
-                     <div class="cashback">
-                        You’ll receive 5% cashback in your wallet after
-                        successful order.
-                     </div>
-
-                     <div class="row-line total">
-                        <span>Order Total:</span>
-                        <strong>₹999.00</strong>
-                     </div>
-
-                     <div class="coupon-section">
-                        <label>Have a coupon?</label>
-                        <div class="coupon-box">
-                           <input
-                              type="text"
-                              placeholder="Enter or select a coupon"
-                           />
-                           <button class="apply-btn">Apply</button>
+                     <h3 class="card-title">Your Order</h3>
+                     <p class="fw-bold mb-1">Product</p>
+                     <hr />
+                     <div class="py-3">
+                        <div class="row-line">
+                           <span
+                              >Embrace effortless elegance white cotton
+                              dress</span
+                           >
+                           <strong>₹1800.00</strong>
                         </div>
 
-                        <div class="coupon-empty">No coupons available</div>
+                        <div class="row-line">
+                           <span
+                              >Embrace effortless elegance white cotton
+                              dress</span
+                           >
+                           <strong>₹1800.00</strong>
+                        </div>
                      </div>
-
-                     <p class="shipping-note">
-                        Free Shipping Inside Kerala.<br />
-                        Delivery Charge will be applicable outside kerala starts
-                        at Rs.150
-                     </p>
-
-                     <button class="btn btn-dark buy-btn">
-                        Proceed to Checkout
+                     <div class="row-line discount mt-3">
+                        <span>Subtotal</span>
+                        <strong>-₹801</strong>
+                     </div>
+                     <hr />
+                     <p class="fw-bold mb-1">Shipping</p>
+                     <hr />
+                     <div class="row-line total py-2">
+                        <span>Total</span>
+                        <strong>₹999.00</strong>
+                     </div>
+                     <hr />
+                     <p class="fw-bold">Payment methods</p>
+                     <div class="py-3">
+                        <div class="form-check mb-3">
+                           <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                           />
+                           <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                           >
+                              Cash on Delivery
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault2"
+                              checked
+                           />
+                           <label
+                              class="form-check-label"
+                              for="flexRadioDefault2"
+                           >
+                              Credit/Debit Card (<small>Coming soon</small>)
+                           </label>
+                        </div>
+                     </div>
+                     <button class="btn btn-dark buy-btn mt-3">
+                        Place Order
                      </button>
-
-                     <p class="terms mt-2">
-                        By proceeding, you agree to our
-                        <a href="#">Terms of Service</a> and
-                        <a href="#">Privacy Policy</a>
-                     </p>
                   </div>
                </div>
             </div>

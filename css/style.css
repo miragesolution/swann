@@ -769,12 +769,12 @@ h6 {
    display: flex;
    justify-content: space-between;
    margin-bottom: 12px;
-   font-size: 16px;
+   font-size: 0.98rem;
    color: #374151;
 }
 
 .row-line.discount {
-   color: #16a34a;
+   color: #788312;
    font-weight: 600;
 }
 
