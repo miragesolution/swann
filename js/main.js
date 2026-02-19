@@ -49,3 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
       updateQty();
    }
 });
+
+// billing details
+
+const checkbox = document.getElementById('createAccountCheckbox');
+const section = document.getElementById('createAccountSection');
+
+checkbox.addEventListener('change', () => {
+   if (checkbox.checked) {
+      section.classList.remove('d-none');
+   } else {
+      section.classList.add('d-none');
+   }
+});

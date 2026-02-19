@@ -881,6 +881,43 @@ h6 {
 
 .page-link {
    color: #374151;
+   transition: all 0.3s ease-in-out;
+}
+
+.page-link:hover {
+   color: #788312;
+}
+
+.page-link.active {
+   background-color: #788312;
+   color: #fff;
+}
+
+.page-link:focus {
+   box-shadow: none;
+}
+
+.ateric {
+   color: #ff0f0f;
+}
+
+.billing-form .form-label {
+   font-size: 0.9rem;
+}
+
+.billing-form .form-select:focus,
+.billing-form .form-control:focus {
+   box-shadow: none;
+}
+
+.billing-form .form-select,
+.billing-form .form-control {
+   padding: 0.8rem 0.7rem;
+   color: #222;
+}
+
+.create-account-check label {
+   font-size: 1rem;
 }
 
 @media (min-width: 992px) {
