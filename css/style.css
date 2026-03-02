@@ -11,7 +11,8 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: 'Noto Sans', sans-serif;
+   /* font-family: 'Noto Sans', sans-serif; */
+   font-family: 'Inter', sans-serif;
 }
 
 .btn:focus {
@@ -94,6 +95,7 @@ h6 {
 .navbar {
    background-color: white;
    border-bottom: 2px solid #dbe1dd;
+   padding: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -233,7 +235,8 @@ h6 {
 
 .product-card .shop-card-price {
    letter-spacing: normal;
-   font-weight: 600;
+   font-weight: 700;
+   font-size: 1.6rem;
 }
 
 .image-wrapper {
@@ -1040,7 +1043,7 @@ h6 {
 }
 
 .product-collections .popular-tag {
-   padding: 8px 15px;
+   padding: 10px 15px;
    font-size: 1.1rem;
    background-color: rgb(22 24 0 / 54%);
    color: #fff;
@@ -1060,12 +1063,14 @@ h6 {
 }
 
 .product-collections .pro-name {
-   font-size: 1.2rem;
+   font-size: 1.5rem;
 }
 
 .product-collections .image-wrapper img {
    object-fit: cover;
    object-position: top;
+   height: 100%;
+   width: 100%;
 }
 
 .product-collections .card-bottom-caption {
@@ -1201,7 +1206,7 @@ h6 {
       padding-top: 25px;
    }
    .main-head {
-      font-size: 1.25rem;
+      font-size: 1.7rem;
       line-height: 1.5rem;
    }
    .delivery-features p {
