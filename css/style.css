@@ -27,7 +27,7 @@ h6 {
    font-size: 0.875rem;
    line-height: 1.25rem;
    font-weight: 600;
-   padding: 0.6rem 1.2rem;
+   padding: 1rem 1.2rem;
 }
 
 .carousel-inner {
@@ -46,7 +46,7 @@ h6 {
 
 .carousel-caption h1 {
    font-family: 'Delius', cursive;
-   font-size: 4.8rem;
+   font-size: 5.8rem;
    text-shadow:
       -1px -1px 1px rgba(255, 255, 255, 0.1),
       1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -61,7 +61,13 @@ h6 {
 
 .carousel-caption .caption-text {
    text-align: left;
+   font-family: 'Delius', cursive;
 }
+
+.caption-text p {
+   font-size: 1.5rem;
+}
+
 .cart {
    font-size: 1.5rem;
 }
@@ -552,7 +558,7 @@ h6 {
 }
 
 .main-head {
-   font-size: 2rem;
+   font-size: 2.7rem;
    line-height: 2.5rem;
    letter-spacing: 0.025em;
    font-weight: 400;
@@ -991,11 +997,11 @@ h6 {
 }
 
 .product-slider .owl-nav .owl-prev {
-   left: -20px;
+   left: -15px;
 }
 
 .product-slider .owl-nav .owl-next {
-   right: -20px;
+   right: -15px;
 }
 
 .product-slider .owl-nav button:hover {
@@ -1021,6 +1027,14 @@ h6 {
    opacity: 0.8;
 }
 
+.product-collections .pro-name {
+   font-size: 1.5rem;
+}
+
+.product-collections .image-wrapper img {
+   object-fit: cover;
+   object-position: top;
+}
 .marquee-slide {
    color: #fff;
    overflow: hidden;
@@ -1055,6 +1069,53 @@ h6 {
 .time-box h2 {
    font-weight: bold;
    margin-bottom: 5px;
+}
+
+.categories .product-card .icon-group {
+   right: 0;
+   color: #fff;
+   left: 0;
+   padding: 0 2rem;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+
+.categories .offer-product {
+   position: absolute;
+   bottom: 5%;
+   text-align: center;
+   width: 100%;
+   color: #fff;
+   font-size: 1.5rem;
+   z-index: 1;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(12, 14, 2, 0.5);
+   z-index: 0;
+}
+
+.privacy-policy ul li {
+   line-height: 1.8;
+}
+
+.form-control-lg::placeholder {
+   font-size: 0.8rem;
+}
+
+.form-card .btn {
+   color: #fff;
+}
+
+.form-card .btn:hover {
+   background-color: #0c0e02;
 }
 
 /* mediaquery */
@@ -1122,5 +1183,31 @@ h6 {
    }
    .main-image img {
       object-fit: cover;
+   }
+   .footer-inner {
+      padding-top: 2.5rem;
+   }
+   .carousel-caption h1 {
+      font-size: 3rem;
+   }
+   .carousel-caption {
+      right: 5%;
+      left: 5%;
+   }
+   .product-slider .owl-nav button {
+      top: 100%;
+   }
+   .product-slider .owl-nav .owl-next {
+      right: 5%;
+   }
+   .product-slider .owl-nav .owl-prev {
+      left: 65%;
+   }
+   .owl-nav {
+      margin-top: 1.5rem;
+   }
+   .copy-right {
+      flex-direction: column;
+      align-items: center;
    }
 }

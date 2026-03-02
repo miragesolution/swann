@@ -106,10 +106,7 @@
             >
                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                     <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="index.html"
+                     <a class="nav-link" aria-current="page" href="index.html"
                         >Home</a
                      >
                   </li>
@@ -143,7 +140,7 @@
                      </ul>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Contact Us</a>
+                     <a class="nav-link" href="contactus.html">Contact Us</a>
                   </li>
                </ul>
             </div>
@@ -152,297 +149,103 @@
 
       <main class="main py-5">
          <div class="container">
-            <div class="row g-lg-5 g-5">
-               <div class="col-lg-8">
-                  <div class="billing-form">
-                     <h3 class="card-title">Billing details</h3>
-                     <form>
-                        <div class="mb-3 row">
-                           <div class="col-lg-6">
-                              <label class="form-label"
-                                 >First name<span class="text-danger"
-                                    >*</span
-                                 ></label
-                              >
-                              <input type="text" class="form-control" />
-                           </div>
-                           <div class="col-lg-6">
-                              <label class="form-label"
-                                 >Last name<span class="text-danger"
-                                    >*</span
-                                 ></label
-                              >
-                              <input type="text" class="form-control" />
-                           </div>
-                        </div>
-                        <!-- <div class="mb-3">
-                           <label class="form-label"
-                              >Company name (optional)<span class="text-danger"
-                                 >*</span
-                              ></label
-                           >
-                           <input type="text" class="form-control" />
-                        </div> -->
-                        <!-- <div class="mb-3">
-                           <label class="form-label"
-                              >Country / Region<span class="text-danger"
-                                 >*</span
-                              ></label
-                           >
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>Open this select menu</option>
-                              <option value="1">India</option>
-                              <option value="2">SriLanka</option>
-                              <option value="3">UK</option>
-                           </select>
-                        </div> -->
-                        <!-- <div class="mb-3">
-                           <label class="form-label"
-                              >Street address
-                              <span class="text-danger">*</span></label
-                           >
-                           <input
-                              type="text"
-                              class="form-control"
-                              placeholder="House number and street name"
-                           />
-                        </div> -->
-                        <!-- <div class="mb-3">
-                           <label class="form-label"
-                              >Town / City <span class="text-danger">*</span></label
-                           >
-                           <input
-                              type="text"
-                              class="form-control"
-                              placeholder="House number and street name"
-                           />
-                        </div> -->
-                        <!-- <div class="mb-3">
-                           <label class="form-label"
-                              >State / Country
-                              <span class="text-danger">*</span></label
-                           >
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>Open this select menu</option>
-                              <option value="1">India</option>
-                              <option value="2">SriLanka</option>
-                              <option value="3">UK</option>
-                           </select>
-                        </div> -->
-                        <div class="mb-3">
-                           <label class="form-label"
-                              >Email address
-                              <span class="text-danger">*</span></label
-                           >
-                           <input type="email" class="form-control" />
-                        </div>
-                        <div class="mb-3">
-                           <label class="form-label"
-                              >Phone <span class="text-danger">*</span></label
-                           >
-                           <div class="row">
-                              <div class="col-lg-9 col-12 mb-3 mb-lg-0">
-                                 <!-- <input type="text" class="form-control" /> -->
-                                 <div class="input-group flex-nowrap">
-                                    <select
-                                       class="form-select"
-                                       style="max-width: 120px"
-                                    >
-                                       <option value="+91" selected>
-                                          +91 India
-                                       </option>
-                                       <option value="+1">+1 USA</option>
-                                       <option value="+44">+44 UK</option>
-                                       <option value="+61">
-                                          +61 Australia
-                                       </option>
-                                    </select>
-                                    <input
-                                       type="tel"
-                                       class="form-control"
-                                       inputmode="numeric"
-                                       pattern="[0-9]*"
-                                       id="phoneInput"
-                                    />
-                                 </div>
-                              </div>
-                              <div class="col-lg-3 col-6">
-                                 <button
-                                    type="button"
-                                    class="btn btn-outline-danger w-100"
-                                    disabled
-                                    style="padding: 0.8rem 0.7rem"
-                                 >
-                                    OTP Verification
-                                 </button>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="mb-3 d-none" id="otpSection">
-                           <label class="form-label">
-                              Enter OTP <span class="text-danger">*</span>
-                           </label>
-                           <input
-                              type="text"
-                              class="form-control w-50"
-                              placeholder="Enter OTP"
-                              maxlength="6"
-                           />
-                        </div>
-                        <div class="row">
-                           <div class="col-lg-6 mb-3">
-                              <label class="form-label"
-                                 >Area <span class="text-danger">*</span></label
-                              >
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 placeholder="House number and street name"
-                              />
-                           </div>
-                           <div class="col-lg-6 mb-3">
-                              <label class="form-label"
-                                 >⁠Near by Landmark
-                                 <span class="text-danger">*</span></label
-                              >
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 placeholder="House number and street name"
-                              />
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-lg-6 mb-3">
-                              <label class="form-label"
-                                 >⁠P.O. Box No
-                                 <span class="text-danger">*</span></label
-                              >
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 placeholder="House number and street name"
-                              />
-                           </div>
-                           <div class="col-lg-6 mb-3">
-                              <label class="form-label"
-                                 >Emirates
-                                 <span class="text-danger">*</span></label
-                              >
-                              <input
-                                 type="text"
-                                 class="form-control"
-                                 placeholder="House number and street name"
-                              />
-                           </div>
-                        </div>
-                        <!-- <div class="mb-3 pt-3">
-                           <div class="form-check create-account-check mb-3">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 id="createAccountCheckbox"
-                              />
-                              <label
-                                 class="form-check-label"
-                                 for="createAccountCheckbox"
-                              >
-                                 Create an account?
-                              </label>
-                           </div>
-
-                           <div id="createAccountSection" class="d-none">
-                              <div class="mb-3">
-                                 <label class="form-label">
-                                    Create account password
-                                    <span class="text-danger">*</span>
-                                 </label>
-                                 <input
-                                    type="password"
-                                    class="form-control"
-                                    placeholder="Password"
-                                 />
-                              </div>
-                           </div>
-                        </div> -->
-                     </form>
-                  </div>
-               </div>
-               <div class="col-lg-4">
-                  <div class="order-card order-summary">
-                     <h3 class="card-title">Your Order</h3>
-                     <p class="fw-bold mb-1">Product</p>
-                     <hr />
-                     <div class="py-3">
-                        <div class="row-line">
-                           <span
-                              >Embrace effortless elegance white cotton
-                              dress</span
-                           >
-                           <strong>₹1800.00</strong>
-                        </div>
-
-                        <div class="row-line">
-                           <span
-                              >Embrace effortless elegance white cotton
-                              dress</span
-                           >
-                           <strong>₹1800.00</strong>
-                        </div>
-                     </div>
-                     <div class="row-line discount mt-3">
-                        <span>Subtotal</span>
-                        <strong>-₹801</strong>
-                     </div>
-                     <hr />
-                     <p class="fw-bold mb-1">Shipping</p>
-                     <hr />
-                     <div class="row-line total py-2">
-                        <span>Total</span>
-                        <strong>₹999.00</strong>
-                     </div>
-                     <hr />
-                     <p class="fw-bold">Payment methods</p>
-                     <div class="py-3">
-                        <div class="form-check custom-radio mb-3">
-                           <input
-                              class="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              id="flexRadioDefault1"
-                           />
-                           <label
-                              class="form-check-label"
-                              for="flexRadioDefault1"
-                           >
-                              Cash on Delivery
-                           </label>
-                        </div>
-                        <div class="form-check custom-radio">
-                           <input
-                              class="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              id="flexRadioDefault2"
-                              checked
-                           />
-                           <label
-                              class="form-check-label"
-                              for="flexRadioDefault2"
-                           >
-                              Credit/Debit Card (<small>Coming soon</small>)
-                           </label>
-                        </div>
-                     </div>
-                     <button class="btn btn-dark buy-btn mt-3">
-                        Place Order
-                     </button>
+            <div class="col-12">
+               <div class="privacy-policy">
+                  <div class="col-12 mb-5">
+                     <h1 class="product-title main-head">
+                        Shipping and Cancellation
+                     </h1>
+                     <h4>Cancellation Policy</h4>
+                     <p class="pt-3">
+                        If you wish to cancel or modify your order, please send
+                        an email to
+                        <a href="mailto:mail@gmail.com"> mail@gmail.com</a>
+                     </p>
+                     <p>
+                        We will make every effort to accommodate your request.
+                        However, any request for cancellation must be made
+                        within 12 hours of placing the order
+                     </p>
+                     <ul>
+                        <li>
+                           Once an order has been submitted, unfortunately, we
+                           cannot process a request for cancellation
+                        </li>
+                        <li>
+                           Refund for domestic orders will be done in 5-7 days,
+                           and international orders will be done in 7-12 days
+                        </li>
+                     </ul>
+                     <p>
+                        Refunds for domestic orders will be done in 5-7 days,
+                        and international orders, in 7-12 days in the case of
+                        online payments done through a Credit/Debit/Net banking
+                        facility.
+                     </p>
+                     <p>
+                        Please note that if your order includes customised
+                        blouse stitching, fall /pico, blouse detachment or
+                        tasseling as per your request, cancellation or changes
+                        are not possible.
+                     </p>
+                     <h4 class="pt-3">
+                        Tulsi Madras Shipping Policy, Shipping Information -
+                        INDIA
+                     </h4>
+                     <ul>
+                        <li>
+                           We offer free shipping in India for all orders over
+                           the value of Rs. 10,000.
+                        </li>
+                        <li>
+                           While we make our best efforts to deliver each item
+                           in your order within 7-10 business days of your
+                           placing the order, in rare cases, a slight delay may
+                           occur due to unforeseeable circumstances, govt.
+                           interventions or natural causes, etc. which we cannot
+                           be held responsible for.
+                        </li>
+                     </ul>
+                     <h4 class="pt-3">Shipping Information - International</h4>
+                     <ul>
+                        <li>We ship to over 230 countries worldwide.</li>
+                        <li>
+                           We exclusively use reputed and reliable carriers such
+                           as FedEx, DHL, Blue Dart etc. to ship your order
+                        </li>
+                        <li>
+                           Shipping Charges are based on the shipping
+                           destination and weight of your parcel. Shipping
+                           companies determine shipping charges based on the
+                           package weight, customs clearance and various other
+                           factors.
+                        </li>
+                        <li>
+                           For maximum savings, we recommend ordering 4-5 sarees
+                           together for availing an optimized shipping rate.
+                           Please write to us at
+                           <a href="mailto:mail@gmail.com"> mail@gmail.com</a>
+                        </li>
+                        <li>
+                           Our delivery partners offer contactless delivery.
+                           Please note that proof of delivery will be digital.
+                           We would be unable to entertain any dispute for the
+                           want of a physical signature
+                        </li>
+                        <li>
+                           International delivery schedules are subject to any
+                           delays at transit, entry, customs and location
+                           accessibility points. We cannot be held responsible
+                           for any unforeseen delays from the carrier's end.
+                        </li>
+                        <li>
+                           Duties and taxes and any additional customs will be
+                           applicable as per your country's regulations and are
+                           to be borne by the customer. These shall be billed
+                           separately to you by the courier company at the time
+                           of delivery.
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
