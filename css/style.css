@@ -1,6 +1,4 @@
 body {
-   /* font-family: 'Inter', sans-serif;
-    */
    font-family: 'Inter', sans-serif;
    color: #2c2c2c;
    padding-top: 120px;
@@ -13,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: 'Inter', sans-serif;
+   font-family: 'Noto Sans', sans-serif;
 }
 
 .btn:focus {
@@ -224,6 +222,20 @@ h6 {
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.product-card .off-price {
+   background-color: #fff;
+   padding: 0.3rem 0.5rem;
+   font-size: 0.8rem;
+   font-weight: 800;
+   border-radius: 10px;
+   letter-spacing: normal;
+}
+
+.product-card .shop-card-price {
+   letter-spacing: normal;
+   font-weight: 600;
+}
+
 .image-wrapper {
    position: relative;
    overflow: hidden;
@@ -252,6 +264,7 @@ h6 {
    z-index: 500;
    bottom: 0;
    right: 0;
+   left: 0;
 }
 /* .hover-img {
    position: absolute;
@@ -558,12 +571,29 @@ h6 {
 }
 
 .main-head {
-   font-size: 2.7rem;
+   font-size: 2.5rem;
    line-height: 2.5rem;
    letter-spacing: 0.025em;
    font-weight: 400;
+   text-transform: uppercase;
+   position: relative;
 }
 
+.head-border-line {
+   position: relative;
+}
+
+.head-border-line::after {
+   content: '';
+   background: #788312;
+   width: 10%;
+   height: 2px;
+   position: absolute;
+   top: 3px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+}
 .pro-desc-tab .nav-link {
    color: #555;
    text-transform: uppercase;
@@ -1006,15 +1036,17 @@ h6 {
 
 .product-slider .owl-nav button:hover {
    background: #788312 !important;
+   color: #fff;
 }
 
 .product-collections .popular-tag {
-   padding: 15px 30px;
+   padding: 8px 15px;
    font-size: 1.1rem;
    background-color: rgb(22 24 0 / 54%);
    color: #fff;
    letter-spacing: 2px;
    font-weight: 400;
+   width: 100%;
 }
 
 .product-collections .image-wrapper img {
@@ -1028,13 +1060,19 @@ h6 {
 }
 
 .product-collections .pro-name {
-   font-size: 1.5rem;
+   font-size: 1.2rem;
 }
 
 .product-collections .image-wrapper img {
    object-fit: cover;
    object-position: top;
 }
+
+.product-collections .card-bottom-caption {
+   background: #9b930a;
+   color: #fff;
+}
+
 .marquee-slide {
    color: #fff;
    overflow: hidden;
@@ -1100,6 +1138,11 @@ h6 {
    bottom: 0;
    background-color: rgba(12, 14, 2, 0.5);
    z-index: 0;
+   transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover .overlay {
+   opacity: 0;
 }
 
 .privacy-policy ul li {
