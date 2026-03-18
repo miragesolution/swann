@@ -1236,11 +1236,17 @@ h6 {
       padding-top: 2.5rem;
    }
    .carousel-caption h1 {
-      font-size: 3rem;
+      font-size: 1.5rem;
+      color: #000;
    }
    .carousel-caption {
-      right: 5%;
-      left: 5%;
+      right: 1%;
+      left: 1%;
+      top: -32%;
+   }
+   .caption-text p {
+      font-size: 1rem;
+      color: #374151;
    }
    .product-slider .owl-nav button {
       top: 100%;
@@ -1257,5 +1263,8 @@ h6 {
    .copy-right {
       flex-direction: column;
       align-items: center;
+   }
+   .carousel-inner {
+      height: auto;
    }
 }
