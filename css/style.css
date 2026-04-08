@@ -413,10 +413,10 @@ h6 {
 
 .text-ellipsis {
    margin-bottom: 0.5rem;
-   font-size: 1.02rem;
+   font-size: 1.125rem;
    line-height: 1.75rem;
    font-weight: 600;
-   /* text-transform: uppercase; */
+   text-transform: uppercase;
 }
 
 .old-price {
@@ -1166,6 +1166,49 @@ h6 {
    background-color: #0c0e02;
 }
 
+.inner-header {
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+}
+
+.inner-banner {
+   height: 300px;
+}
+
+.price-under-tab.pro-desc-tab .nav-link.active {
+   background-color: #788312;
+   color: #fff;
+}
+
+.occassional-add {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 400px;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.occassional-add .add-caption h1 {
+   font-size: 5rem;
+}
+
+.occassional-add .add-caption p {
+   font-size: 2.5rem;
+}
+
+.occassional-add .add-caption h1,
+.occassional-add .add-caption p {
+   font-family: 'Imperial Script', cursive;
+}
 /* mediaquery */
 @media (min-width: 992px) {
    .navbar-brand {
